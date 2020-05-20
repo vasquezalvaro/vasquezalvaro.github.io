@@ -1,0 +1,131 @@
+<html>
+    <head> 
+    
+    	<title>Punto y Fama</title> 
+    	
+    	    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="gray" />
+    <!-- Fullscreen para ios -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+ <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/pyf-icon-152.png" />
+    <meta name="theme-color" content="gray" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Punto y Fama" />
+    <meta name="msapplication-TileImage" content="images/pyf-icon-144.png" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+        
+        <link type="text/css" rel="stylesheet" media="screen" href="jqtouch/jqtouch.css">
+        <link type="text/css" rel="stylesheet" media="screen" href="themes/jqt/theme1.css">         
+        <script type="text/javascript" src="jqtouch/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="jqtouch/jqtouch.js"></script>
+        <script type="text/javascript" src="js/pyf1.js"></script>
+        
+        <script type="text/javascript">
+            var jQT = $.jQTouch({
+                // icon: 'kilo.png',
+                statusBar: 'black'
+            });
+        </script>
+        
+                 
+    </head>
+    <body>
+    <div id="home">
+		<div class="calculadora" id="cal">
+          	 <div id="numeros">
+          	     <img id=imgcalc src="themes/jqt/img/calc11.png" usemap="#planetmap">
+					<map id="planetmap" name="planetmap">
+					<area shape="rect" coords="0,71,55,124" alt="1" onclick='clickdigit(1)'>
+					<area shape="rect" coords="55,71,110,124" alt="2" onclick='clickdigit(2)'>
+					<area shape="rect" coords="0,126,55,177" alt="3" onclick='clickdigit(3)'>
+					<area shape="rect" coords="55,126,110,177" alt="4" onclick='clickdigit(4)'>
+					<area shape="rect" coords="0,177,55,230" alt="5" onclick='clickdigit(5)'>
+					<area shape="rect" coords="55,177,110,230" alt="6" onclick='clickdigit(6)'>
+					<area shape="rect" coords="0,230,55,283" alt="7" onclick='clickdigit(7)'>
+					<area shape="rect" coords="55,230,110,283" alt="8" onclick='clickdigit(8)'>
+					<area shape="rect" coords="0,283,55,334" alt="9" onclick='clickdigit(9)'>
+					<area shape="rect" coords="55,283, 110, 334" alt="0" onclick='clickdigit(0)'>
+					
+					<area shape="rect" coords="80,5, 108, 28" alt="delete" onclick='backsp()'>
+					<area shape="rect" coords="34,28, 84, 70" alt="enter" onclick='buttonenter()'>
+					
+					</map>
+				  </img>	
+				<div class="entrada">
+					<span id="ent"></span>
+				</div>
+			</div> <!-- numeros -->
+			
+			<div id="botones">			
+			    <img id=imgbot src="themes/jqt/img/botones.png" usemap="#botmap">
+					<map id="botmap" name="botmap">
+					<area shape="rect" coords="0,0,70,60" alt="1" onclick='buttonnuevoj()'>
+					<area shape="rect" coords="80,0,150,60" alt="2" onclick='golevels()'>
+					</map>
+                </img>	
+          	</div> <!-- botones -->
+		</div>  <!-- calculadora --> 
+			
+          	<div class="resizq">
+          		<p class="space"><span class="idr"  id="i0"></span><span id="r0"></span> <span class="pyf" id="pf0"></span></p>
+				<p class="space"><span class="idr"  id="i1"></span><span id="r1"></span> <span class="pyf" id="pf1"></span></p>
+				<p class="space"><span class="idr"  id="i2"></span><span id="r2"></span> <span class="pyf" id="pf2"></span></p>
+				<p class="space"><span class="idr"  id="i3"></span><span id="r3"></span> <span class="pyf" id="pf3"></span></p>
+				<p class="space"><span class="idr"  id="i4"></span><span id="r4"></span> <span class="pyf" id="pf4"></span></p>
+				<p class="space"><span class="idr"  id="i5"></span><span id="r5"></span> <span class="pyf" id="pf5"></span></p>
+				<p class="space"><span class="idr"  id="i6"></span><span id="r6"></span> <span class="pyf" id="pf6"></span></p>
+				<p class="space"><span class="idr"  id="i7"></span><span id="r7"></span> <span class="pyf" id="pf7"></span></p>
+				<p class="space"><span class="idr"  id="i8"></span><span id="r8"></span> <span class="pyf" id="pf8"></span></p>
+ 				<p class="space"><span class="idr"  id="i9"></span><span id="r9"></span> <span class="pyf" id="pf9"></span></p>
+ 				<p class="space"><span class="idr"  id="i10"></span><span id="r10"></span> <span class="pyf" id="pf10"></span></p>
+				<p class="space"><span class="idr"  id="i11"></span><span id="r11"></span> <span class="pyf" id="pf11"></span></p>
+				<p class="space"><span class="idr"  id="i12"></span><span id="r12"></span> <span class="pyf" id="pf12"></span></p>
+				<p class="space"><span class="idr"  id="i13"></span><span id="r13"></span> <span class="pyf" id="pf13"></span></p>
+				<p class="space"><span class="idr"  id="i14"></span><span id="r14"></span> <span class="pyf" id="pf14"></span></p>
+<!-- <p class="space"><span class="idr"  id="i15"></span><span id="r15"></span>5)A B C D E f f f f<span class="pyf" id="pf14"></span></p>
+-->        	
+        	</div>  <!-- resizq -->
+      		
+      		
+        	<div class="mensajes">  	
+          		<span id="m1"></span>
+          		<span id="m2"></span>  
+          		<span id="m3"></span>
+         		<span id="m4">(Digitos: 4-Intentos: 8)</span>
+        	</div>  <!-- mensajes -->
+
+            <div id="colorspyf">			
+			    <img id=imgcols src="themes/jqt/img/colorspyf.png" usemap="#colmap">
+			    	<map id="colmap" name="colmap">
+					<area shape="rect" coords="0,0,32,24" alt="0" onclick='colorspyf(0)'>
+					<area shape="rect" coords="32,0,64,24" alt="1" onclick='colorspyf(1)'>
+					<area shape="rect" coords="64,0,96,24" alt="2" onclick='colorspyf(2)'>
+					<area shape="rect" coords="96,0,128,24" alt="3" onclick='colorspyf(3)'>
+					</map>
+			    
+			    </img>	
+			   <p>Seleccione un color </p>
+			   <p>y pinte un resultado</p>
+         	</div> <!-- colorspyf -->
+			     	
+    </div>   <!-- home -->
+
+    
+    <div id="levels">
+    	<a class="button back" href="#">Back</a>
+    	<h1>Niveles</h1></br>
+    	<p>Seleccione el nivel de dificultad que esta establecido por la cantidad de digitos del numero secreto por adivinar: </p></br>
+ 
+    </div> 
+
+    </body>
+<script src="js/main.js"></script>
+</html>
