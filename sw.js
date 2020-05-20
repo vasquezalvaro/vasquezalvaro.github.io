@@ -1,4 +1,4 @@
-var cacheName = 'pyf';
+var cacheName = 'PuntoyFama';
 var filesToCache = [
   '/',
   '/index.html',
