@@ -83,9 +83,10 @@ function golevels() {
     jQT.goTo("#levels", "flip");
 } 
 
-//function godemo() {
-    //jQT.goTo("vdemo", "flip");
-//} 
+function goback() {
+//alert("back");
+    jQT.goBack();
+} 
   
     function clickdigit(n) { 
         if (finito == false) {
