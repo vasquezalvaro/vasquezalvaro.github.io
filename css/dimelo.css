@@ -1,0 +1,42 @@
+body {
+  font-family: Helvetica;
+  font-size: 14px;
+  color: #000;
+  background-color: #25871a;
+  background-color: #BABABA;
+  background-color: #E0E0E0;
+  /* background: url(img/holz-1024x768.jpg) fixed center center; 
+  background-image: url("img/bg.jpg");
+  background-repeat: no-repeat;
+  */
+  
+  background-size: 100vw 100vh;
+}
+body > * {
+  /* override jqtouch.css */
+  min-height: 320px !important;
+}
+
+/*  margin-left: 6px;*********  HOME ********* */
+#home {
+  
+  width: 80vw;
+  height: 75vh;
+  margin: 2vh 0vw;
+}
+
+/* **** HOME *** */
+
+#ig1,
+#ig2,
+#ig3,
+#ig4,
+#ig5 {
+  height: 20vw;
+  width: 20vw;
+
+  margin: 0.2vw;
+}
+
+p {line-height: 0.5em;}
+
