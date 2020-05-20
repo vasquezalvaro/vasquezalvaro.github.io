@@ -9,6 +9,7 @@ var filesToCache = [
   '/themes/img/colorspyfsel-0.png',
   '/themes/img/colorspyfsel-1.png',
   '/themes/img/colorspyfsel-2.png',
+  '/themes/img/colorspyfsel-3.png',
   '/themes/img/colorspy.png',
   '/themes/img/botones.png',
   '/themes/img/back_button.png',
